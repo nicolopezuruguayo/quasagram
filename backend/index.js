@@ -71,12 +71,12 @@ app.post("/createPost", (request, response) => {
         ", mimetype: " +
         mimetype
     );
-    file.on("data", function(data) {
-      console.log("File [" + fieldname + "] got " + data.length + " bytes");
-    });
-    file.on("end", function() {
-      console.log("File [" + fieldname + "] Finished");
-    });
+    // file.on("data", function(data) {
+    //   console.log("File [" + fieldname + "] got " + data.length + " bytes");
+    // });
+    // file.on("end", function() {
+    //   console.log("File [" + fieldname + "] Finished");
+    // });
   });
 
   busboy.on("field", function(
